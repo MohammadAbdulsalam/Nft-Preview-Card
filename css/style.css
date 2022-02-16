@@ -1,0 +1,103 @@
+/* Start Global Rules */
+:root {
+    --primary-color: hsl(215, 51%, 70%);
+    --primary-color2: hsl(178, 100%, 50%);
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    width: 1440px;
+}
+@media (max-width: 1200px){
+    body {
+        width: 1440px;
+    }
+}
+@media (max-width: 767px){
+    body {
+        width: 375px;
+    }
+}
+/* End Global Rules */
+/* Start Card */
+.card {
+    width: 300px;
+    height: 500px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: rgb(20, 37, 61);
+    border-radius: 10px;
+    box-shadow: 1px 1px 30px 20px #0c1729, 0px 20px 15px 10px #0c192c
+}
+.card .image img {
+    max-width: 100%;
+}
+.info p:first-child {
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+    font-weight: 500;
+}
+.info p:last-child {
+    color: var(--primary-color);
+    font-size: 15px;
+}
+.card .detail {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+.detail .ethrum {
+    display: flex;
+    align-items: center;
+    color: var(--primary-color2);
+    font-size: small;
+    letter-spacing: 1px;
+}
+.detail .date {
+    display: flex;
+    align-items: center;
+    color: var(--primary-color);
+    font-size: small;
+}
+.detail p {
+    padding-left: 5px;
+}
+.copyright {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.copyright p {
+    padding-left: 10px;
+}
+.copyright img {
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.copyright p {
+    color: var(--primary-color);
+    font-size: 14px;
+}
+.copyright p span {
+    color: hsl(0, 0%, 100%);
+}
+footer {
+    padding-top: 20px;
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 500;
+}
+footer span {
+    color: var(--primary-color);
+}
+footer:hover span {
+    color: var(--primary-color2);
+}
+/* End Card */
